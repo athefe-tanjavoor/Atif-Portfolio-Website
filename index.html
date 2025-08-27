@@ -1,1232 +1,1380 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atif-Personal-Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- Ionicons CDN -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ionicons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
 
-</head>
-
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/IMG20211116131625.jpg"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Tanjavoor Athefe</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/IMG20211116131625.jpg" alt="Richard hanrick" width="80">
-        </figure>
+            <p class="title">Backend Developer & Devops Engineer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Tanjavoor Athefe</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Backend Developer & Devops Engineer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:tanjavoorathefe@gmail.com" class="contact-link"
+                  >tanjavoorathefe@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+91 9346555487" class="contact-link"
+                  >+91 9346555487</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:tanjavoorathefe@gmail.com" class="contact-link">tanjavoorathefe@gmail.com</a>
-            </div>
+                <time datetime="20-10-2000">20-10-2000</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>Chennai, India</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
 
-              <a href="tel:+91 9346555487" class="contact-link">+91 9346555487</a>
-            </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/your-profile"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-          </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-          <li class="contact-item">
+            <li class="social-item">
+              <a
+                href="https://github.com/athefe-tanjavoor"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="20-10-2000">20-10-2000</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Chennai, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-  <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-link">
-    <ion-icon name="logo-linkedin"></ion-icon>
-  </a>
-</li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-  <a href="https://github.com/athefe-tanjavoor" target="_blank" class="social-link">
-    <ion-icon name="logo-github"></ion-icon>
-  </a>
-</li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>💻 Backend Developer & DevOps Engineer</p>
+            <p>
+              👨‍💻 I’m a Backend Developer & DevOps Engineer passionate about
+              building scalable, secure, and high-performance applications. I
+              specialize in Node.js, Express.js, and TypeScript, creating APIs
+              and backend systems that are both robust and efficient.
+            </p>
+            <p>
+              ⚡ With a strong foundation in DevOps, I ensure seamless
+              deployment, monitoring, and automation of applications. I enjoy
+              bridging the gap between development and operations, making
+              software delivery faster and more reliable.
+            </p>
+            <p>🔧 My expertise includes:</p>
 
-        <section class="about-text">
-          <p>💻 Backend Developer & DevOps Engineer</p>
-          <p>
-👨‍💻 I’m a Backend Developer & DevOps Engineer passionate about building scalable, secure, and high-performance applications. I specialize in Node.js, Express.js, and TypeScript, creating APIs and backend systems that are both robust and efficient.
-          </p>
-          <p>
-         ⚡ With a strong foundation in DevOps, I ensure seamless deployment, monitoring, and automation of applications. I enjoy bridging the gap between development and operations, making software delivery faster and more reliable.
-          </p>
-          <p>🔧 My expertise includes:</p>
+            <p>🚀 Docker & Kubernetes for container orchestration</p>
+            <p>🔄 Jenkins, Ansible & GitHub Actions for CI/CD automation</p>
+            <p>⚡ Nginx & Reverse Proxy for performance optimization</p>
+            <p>📊 Prometheus & Grafana for monitoring and alerting</p>
+            <p>🏗️ Terraform for Infrastructure as Code (IaC)</p>
+            <p>☁️ AWS & Cloud Platforms for scalable deployments</p>
+            <p>
+              📈 Digital Growth & Marketing Tech: SEO Optimization, Google Ads,
+              and Meta Ads (Facebook & Instagram) to boost online presence and
+              generate business growth
+            </p>
 
-          <p>🚀 Docker & Kubernetes for container orchestration</p>
-          <p>🔄 Jenkins, Ansible & GitHub Actions for CI/CD automation</p>
-          <p>⚡ Nginx & Reverse Proxy for performance optimization</p>
-          <p>📊 Prometheus & Grafana for monitoring and alerting</p>
-          <p>🏗️ Terraform for Infrastructure as Code (IaC)</p>
-          <p>☁️ AWS & Cloud Platforms for scalable deployments</p>
-          <p>📈 Digital Growth & Marketing Tech: SEO Optimization, Google Ads, and Meta Ads (Facebook & Instagram) to boost online presence and generate business growth</p>
+            <p>
+              ✨ My goal is to design functional, optimized, and
+              production-ready systems while ensuring smooth developer
+              workflows, business scalability, and reliable end-user
+              experiences.
+            </p>
+          </section>
 
-          <p>
-           ✨ My goal is to design functional, optimized, and production-ready systems while ensuring smooth developer workflows, business scalability, and reliable end-user experiences.
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <!-- Backend Development -->
+            <div class="service-item">
+              <div class="icon-box">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h2 style="color: white">Backend Development</h2>
+                <p class="service-item-text">
+                  Building scalable, secure, and efficient backend systems using
+                  Node.js, Express.js, and TypeScript.
+                </p>
+              </div>
+            </div>
 
-        <!-- Backend Development -->
-<div class="service-item">
-  <div class="icon-box">
-    <ion-icon name="server-outline"></ion-icon>
-  </div>
-  <div class="service-content-box">
-    <h2 style="color:white;">Backend Development</h2>
-    <p class="service-item-text">
-      Building scalable, secure, and efficient backend systems using Node.js, Express.js, and TypeScript.
-    </p>
-  </div>
-</div>
+            <!-- DevOps -->
+            <div class="service-item">
+              <div class="icon-box">
+                <ion-icon name="cloud-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h2 style="color: white">DevOps</h2>
+                <p class="service-item-text">
+                  Automating deployments, CI/CD pipelines, Kubernetes, and
+                  monitoring with Prometheus & Grafana.
+                </p>
+              </div>
+            </div>
 
-<!-- DevOps -->
-<div class="service-item">
-  <div class="icon-box">
-    <ion-icon name="cloud-outline"></ion-icon>
-  </div>
-  <div class="service-content-box">
-    <h2 style="color:white;">DevOps</h2>
-    <p class="service-item-text">
-      Automating deployments, CI/CD pipelines, Kubernetes, and monitoring with Prometheus & Grafana.
-    </p>
-  </div>
-</div>
+            <!-- SEO -->
+            <div class="service-item">
+              <div class="icon-box">
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h2 style="color: white">SEO</h2>
+                <p class="service-item-text">
+                  Optimizing websites for search engines with keyword
+                  strategies, backlinks, and performance improvements.
+                </p>
+              </div>
+            </div>
 
-<!-- SEO -->
-<div class="service-item">
-  <div class="icon-box">
-    <ion-icon name="trending-up-outline"></ion-icon>
-  </div>
-  <div class="service-content-box">
-    <h2 style="color:white;">SEO</h2>
-    <p class="service-item-text">
-      Optimizing websites for search engines with keyword strategies, backlinks, and performance improvements.
-    </p>
-  </div>
-</div>
+            <!-- Google Ads -->
+            <div class="service-item">
+              <div class="icon-box">
+                <ion-icon name="logo-google"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h2 style="color: white">Google Ads</h2>
+                <p class="service-item-text">
+                  Running high-performing ad campaigns to maximize conversions
+                  and reach target audiences effectively.
+                </p>
+              </div>
+            </div>
 
-<!-- Google Ads -->
-<div class="service-item">
-  <div class="icon-box">
-    <ion-icon name="logo-google"></ion-icon>
-  </div>
-  <div class="service-content-box">
-    <h2 style="color:white;">Google Ads</h2>
-    <p class="service-item-text">
-      Running high-performing ad campaigns to maximize conversions and reach target audiences effectively.
-    </p>
-  </div>
-</div>
+            <!-- Meta Ads -->
+            <div class="service-item">
+              <div class="icon-box">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h2 style="color: white">Meta Ads</h2>
+                <p class="service-item-text">
+                  Creating and managing impactful Facebook & Instagram ad
+                  campaigns to grow brand awareness and sales.
+                </p>
+              </div>
+            </div>
+          </section>
 
-<!-- Meta Ads -->
-<div class="service-item">
-  <div class="icon-box">
-    <ion-icon name="logo-facebook"></ion-icon>
-  </div>
-  <div class="service-content-box">
-    <h2 style="color:white;">Meta Ads</h2>
-    <p class="service-item-text">
-      Creating and managing impactful Facebook & Instagram ad campaigns to grow brand awareness and sales.
-    </p>
-  </div>
-</div>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Mohamed Arif"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mohamed Arif
+                  </h4>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Mohamed Arif" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mohamed Arif</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Creating and managing high-performing ad campaigns to drive traffic and conversions.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Creating and managing high-performing ad campaigns to
+                      drive traffic and conversions.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Shivani"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Shivani
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Shivani" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Shivani</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                   Amazing work on our rebranding! The process was smooth and the outcome was fantastic.
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Amazing work on our rebranding! The process was smooth and
+                      the outcome was fantastic.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Gayatri"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Gayatri
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Gayatri" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Gayatri</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    The design and development were top-notch. Would definitely recommend for any creative project.
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      The design and development were top-notch. Would
+                      definitely recommend for any creative project.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Santhosh Yadav"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Santhosh Yadav
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Santhosh Yadav" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Santhosh Yadav</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                      Great collaboration experience. The final product was both beautiful and functional.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Great collaboration experience. The final product was both
+                      beautiful and functional.
+                    </p>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <section class="clients">
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
 
-          <h3 class="h3 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-          <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Anna University, Tamil Nadu
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2018 — 2022</span>
+                <span
+                  >B.E. Computer Science and Engineering CGPA: 7.19 / 10</span
+                >
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Specialized in software development, data structures,
+                  algorithms, and databases Final Year Project: Cloud-Based
+                  DevOps Automation Hands-on experience with web technologies,
+                  cloud deployment, and CI/CD pipelines
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Anna University, Tamil Nadu</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sri Chaitanya Junior College, Andhra Pradesh (BIEAP)
+                </h4>
 
-              <span>2018 — 2022</span>
-              <span>B.E. Computer Science and Engineering
-CGPA: 7.19 / 10</span>
+                <span>2016 — 2018</span>
+                <span>Intermediate (MPC) — 78.3%</span>
 
-              <p class="timeline-text">
-                Specialized in software development, data structures, algorithms, and databases
+                <p class="timeline-text">
+                  Focused on Mathematics, Physics, and Chemistry Built a strong
+                  foundation for Computer Science and Engineering
+                </p>
+              </li>
 
-Final Year Project: Cloud-Based DevOps Automation
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sri Ram High School, Andhra Pradesh (BSEAP)
+                </h4>
 
-Hands-on experience with web technologies, cloud deployment, and CI/CD pipelines
-              </p>
+                <span>2015 — 2016</span>
+                <span>Secondary School Certificate (SSC) — 82%</span>
 
-            </li>
+                <p class="timeline-text">
+                  Completed 10th grade under Andhra Pradesh State Board Strong
+                  academic foundation with interest in science and technology
+                  eos.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            <li class="timeline-item">
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-              <h4 class="h4 timeline-item-title">Sri Chaitanya Junior College, Andhra Pradesh (BIEAP)</h4>
-
-              <span>2016 — 2018</span>
-              <span>Intermediate (MPC) — 78.3%</span>
-
-              <p class="timeline-text">
-                Focused on Mathematics, Physics, and Chemistry
-
-Built a strong foundation for Computer Science and Engineering
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sri Ram High School, Andhra Pradesh (BSEAP)</h4>
-
-              <span>2015 — 2016</span>
-              <span>Secondary School Certificate (SSC) — 82%</span>
-
-              <p class="timeline-text">
-                Completed 10th grade under Andhra Pradesh State Board
-
-Strong academic foundation with interest in science and technology
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Backend Developer & DevOps Engineer
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2025 — Present</span>
+                <span>Rankraze Technologies Pvt Ltd, Chennai</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Leading backend development and DevOps automation Implementing
+                  Kubernetes orchestration and CI/CD pipelines Managing cloud
+                  infrastructure (AWS, Docker, Ansible, Jenkins, Kubernetes,
+                  OpenShift) Enhancing system reliability and scalability for
+                  production workloads
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Backend Developer & DevOps Engineer</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Freelance Backend Developer
+                </h4>
 
-              <span>2025 — Present</span>
-              <span>Rankraze Technologies Pvt Ltd, Chennai</span>
+                <span>Jul 2023 – Jun 2025</span>
 
+                <p class="timeline-text">
+                  Worked with multiple clients delivering custom backend
+                  solutions Designed scalable APIs with Express.js & MongoDB
+                  Assisted startups with cloud deployments and optimized CI/CD
+                  pipelines Integrated Docker & Jenkins workflows for small
+                  teams
+                </p>
+              </li>
 
-              <p class="timeline-text">
-Leading backend development and DevOps automation
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Backend Developer</h4>
 
-Implementing Kubernetes orchestration and CI/CD pipelines
+                <span>Jun 2022 – Jun 2023</span>
+                <span>Webranc IT Solutions, Bengaluru</span>
 
-Managing cloud infrastructure (AWS, Docker, Ansible, Jenkins, Kubernetes, OpenShift)
+                <p class="timeline-text">
+                  Built and maintained REST APIs (Schemas, Controllers, Routes)
+                  using TypeScript & Node.js Deployed projects on AWS EC2,
+                  managed S3 buckets, and configured Nginx reverse proxy
+                  Automated CI/CD pipelines with Jenkins and integrated webhooks
+                  Developed Dockerfiles for portable containerized deployments
+                </p>
+              </li>
+            </ol>
+          </section>
 
-Enhancing system reliability and scalability for production workloads
-              </p>
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
 
-            </li>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Backend Development</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-            <li class="timeline-item">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    DevOps & Cloud (AWS, Docker, Jenkins, Kubernetes)
+                  </h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Freelance Backend Developer</h4>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Database Management (MongoDB, MySQL)</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-              <span>Jul 2023 – Jun 2025</span>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    API Development (REST, Express.js, Node.js)
+                  </h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-              <p class="timeline-text">
-               Worked with multiple clients delivering custom backend solutions
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Linux & Server Administration</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-Designed scalable APIs with Express.js & MongoDB
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SEO Optimization (Technical + On-Page)</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-Assisted startups with cloud deployments and optimized CI/CD pipelines
-
-Integrated Docker & Jenkins workflows for small teams
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Backend Developer</h4>
-
-              <span>Jun 2022 – Jun 2023</span>
-              <span>Webranc IT Solutions, Bengaluru</span>
-
-              <p class="timeline-text">
-                Built and maintained REST APIs (Schemas, Controllers, Routes) using TypeScript & Node.js
-
-Deployed projects on AWS EC2, managed S3 buckets, and configured Nginx reverse proxy
-
-Automated CI/CD pipelines with Jenkins and integrated webhooks
-
-Developed Dockerfiles for portable containerized deployments
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-  <h3 class="h3 skills-title">My Skills</h3>
-
-  <ul class="skills-list content-card">
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Backend Development</h5>
-        <data value="90">90%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 90%;"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">DevOps & Cloud (AWS, Docker, Jenkins, Kubernetes)</h5>
-        <data value="85">85%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 85%;"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Database Management (MongoDB, MySQL)</h5>
-        <data value="80">80%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 80%;"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">API Development (REST, Express.js, Node.js)</h5>
-        <data value="90">90%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 90%;"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Linux & Server Administration</h5>
-        <data value="80">80%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 80%;"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">SEO Optimization (Technical + On-Page)</h5>
-        <data value="70">70%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 70%;"></div>
-      </div>
-    </li>
-
-  </ul>
-
-</section>
-
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-  <header>
-    <h2 class="h2 article-title">Portfolio</h2>
-  </header>
+          <section class="projects">
+            <!-- 🔹 Project Categories -->
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Backend</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>DevOps</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>AWS / Cloud</button>
+              </li>
+            </ul>
 
-  <section class="projects">
-
-    <!-- 🔹 Project Categories -->
-    <ul class="filter-list">
-      <li class="filter-item">
-        <button class="active" data-filter-btn>All</button>
-      </li>
-      <li class="filter-item">
-        <button data-filter-btn>Backend</button>
-      </li>
-      <li class="filter-item">
-        <button data-filter-btn>DevOps</button>
-      </li>
-      <li class="filter-item">
-        <button data-filter-btn>AWS / Cloud</button>
-      </li>
-    </ul>
-
-    <!-- 🔹 Dropdown Filter (Mobile) -->
-    <div class="filter-select-box">
-      <button class="filter-select" data-select>
-        <div class="select-value" data-selecct-value>Select category</div>
-        <div class="select-icon">
-          <ion-icon name="chevron-down"></ion-icon>
-        </div>
-      </button>
-      <ul class="select-list">
-        <li class="select-item"><button data-select-item>All</button></li>
-        <li class="select-item"><button data-select-item>Backend</button></li>
-        <li class="select-item"><button data-select-item>DevOps</button></li>
-        <li class="select-item"><button data-select-item>AWS / Cloud</button></li>
-      </ul>
-    </div>
-
-    <!-- 🔹 Projects List -->
-    <ul class="project-list">
-
-      <!-- E-Commerce Platform -->
-      <li class="project-item active" data-filter-item data-category="Backend">
-        <a href="https://github.com/athefe-tanjavoor" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+            <!-- 🔹 Dropdown Filter (Mobile) -->
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Backend</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>DevOps</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>AWS / Cloud</button>
+                </li>
+              </ul>
             </div>
-            <img src="./assets/images/ecomerce.jpg" alt="E-Commerce Platform" loading="lazy">
-          </figure>
-          <h3 class="project-title">E-Commerce Platform</h3>
-          <p class="project-category">Backend Development</p>
-        </a>
-      </li>
 
-      <!-- Social Media Platform -->
-      <li class="project-item active" data-filter-item data-category="Backend">
-        <a href="https://github.com/athefe-tanjavoor/social_media" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/socialmedia.jpeg" alt="Social Media Platform" loading="lazy">
-          </figure>
-          <h3 class="project-title">Social Media Platform</h3>
-          <p class="project-category">Backend Development</p>
-        </a>
-      </li>
+            <!-- 🔹 Projects List -->
+            <ul class="project-list">
+              <!-- E-Commerce Platform -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Backend"
+              >
+                <a href="https://github.com/athefe-tanjavoor" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/ecomerce.jpg"
+                      alt="E-Commerce Platform"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">E-Commerce Platform</h3>
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
 
-      <!-- Twitter Clone -->
-      <li class="project-item active" data-filter-item data-category="Backend">
-        <a href="https://github.com/athefe-tanjavoor/twitter" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/twitter.jpeg" alt="Twitter Clone" loading="lazy">
-          </figure>
-          <h3 class="project-title">Twitter Clone</h3>
-          <p class="project-category">Backend Development</p>
-        </a>
-      </li>
+              <!-- Social Media Platform -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Backend"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/social_media"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/socialmedia.jpeg"
+                      alt="Social Media Platform"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Social Media Platform</h3>
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
 
-      <!-- Jenkins CI/CD Pipeline -->
-      <li class="project-item active" data-filter-item data-category="DevOps">
-        <a href="https://github.com/athefe-tanjavoor/jenkins-nodejs-pipeline" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/Jenkins.jpg" alt="Jenkins CI/CD Pipeline" loading="lazy">
-          </figure>
-          <h3 class="project-title">Jenkins CI/CD Pipeline</h3>
-          <p class="project-category">DevOps / Automation</p>
-        </a>
-      </li>
+              <!-- Twitter Clone -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Backend"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/twitter"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/twitter.jpeg"
+                      alt="Twitter Clone"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Twitter Clone</h3>
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
 
-      <!-- GitHub Actions CI/CD -->
-      <li class="project-item active" data-filter-item data-category="DevOps">
-        <a href="https://github.com/athefe-tanjavoor/cicd-nodejs-github-actions" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/github.jpg" alt="GitHub Actions CI/CD" loading="lazy">
-          </figure>
-          <h3 class="project-title">GitHub Actions CI/CD</h3>
-          <p class="project-category">DevOps</p>
-        </a>
-      </li>
+              <!-- Jenkins CI/CD Pipeline -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="DevOps"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/jenkins-nodejs-pipeline"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Jenkins.jpg"
+                      alt="Jenkins CI/CD Pipeline"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Jenkins CI/CD Pipeline</h3>
+                  <p class="project-category">DevOps / Automation</p>
+                </a>
+              </li>
 
-      <!-- Kubernetes Monitoring App -->
-      <li class="project-item active" data-filter-item data-category="DevOps">
-        <a href="https://github.com/athefe-tanjavoor/k8s-nodejs-monitoring-app" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/kubernetes.jpg" alt="Kubernetes Monitoring App" loading="lazy">
-          </figure>
-          <h3 class="project-title">Kubernetes Monitoring App</h3>
-          <p class="project-category">DevOps / Cloud</p>
-        </a>
-      </li>
+              <!-- GitHub Actions CI/CD -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="DevOps"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/cicd-nodejs-github-actions"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/github.jpg"
+                      alt="GitHub Actions CI/CD"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">GitHub Actions CI/CD</h3>
+                  <p class="project-category">DevOps</p>
+                </a>
+              </li>
 
-      <!-- EC2 Lifecycle Automation -->
-      <li class="project-item active" data-filter-item data-category="AWS / Cloud">
-        <a href="https://github.com/athefe-tanjavoor/ec2-lifecycle-automation" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/Amazon-EC2.jpg" alt="EC2 Lifecycle Automation" loading="lazy">
-          </figure>
-          <h3 class="project-title">EC2 Lifecycle Automation</h3>
-          <p class="project-category">AWS / Cloud</p>
-        </a>
-      </li>
-      
-      <!-- Innoedge Website -->
-<li class="project-item active" data-filter-item data-category="Web Development">
-  <a href="http://innoedge.co.in/" target="_blank">
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img src="./assets/images/innoedge.png" alt="Innoedge Website" loading="lazy">
-    </figure>
-    <h3 class="project-title">Innoedge Website</h3>
-    <p class="project-category">Web Development (Frontend + Hosting)</p>
-  </a>
-</li>
-<!-- forum-app -->
-      <li class="project-item active" data-filter-item data-category="AWS / Cloud">
-        <a href="https://github.com/athefe-tanjavoor/forum-app" target="_blank">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/foru-app.jpeg" alt="EC2 Lifecycle Automation" loading="lazy">
-          </figure>
-          <h3 class="project-title">forum-app</h3>
-          <p class="project-category">Backend Development</p>
-        </a>
-      </li>
-      <!-- Portfolio-Website -->
-      <li class="project-item active" data-filter-item data-category="AWS / Cloud">
-        <a href="https://github.com/athefe-tanjavoor/Atif-Portfolio-Website" target="_blank">c
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/Atif-portfolio.png" alt="EC2 Lifecycle Automation" loading="lazy">
-          </figure>
-          <h3 class="project-title">This Portfolio-Website</h3>
-          <p class="project-category">portfolio</p>
-        </a>
-      </li>
-    </ul>
-  </section>
+              <!-- Kubernetes Monitoring App -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="DevOps"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/k8s-nodejs-monitoring-app"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/kubernetes.jpg"
+                      alt="Kubernetes Monitoring App"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Kubernetes Monitoring App</h3>
+                  <p class="project-category">DevOps / Cloud</p>
+                </a>
+              </li>
 
-</article>
+              <!-- EC2 Lifecycle Automation -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="AWS / Cloud"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/ec2-lifecycle-automation"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Amazon-EC2.jpg"
+                      alt="EC2 Lifecycle Automation"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">EC2 Lifecycle Automation</h3>
+                  <p class="project-category">AWS / Cloud</p>
+                </a>
+              </li>
 
+              <!-- Innoedge Website -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Web Development"
+              >
+                <a href="http://innoedge.co.in/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/innoedge.png"
+                      alt="Innoedge Website"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Innoedge Website</h3>
+                  <p class="project-category">
+                    Web Development (Frontend + Hosting)
+                  </p>
+                </a>
+              </li>
+              <!-- forum-app -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="AWS / Cloud"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/forum-app"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/foru-app.jpeg"
+                      alt="EC2 Lifecycle Automation"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">forum-app</h3>
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
+              <!-- Portfolio-Website -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="AWS / Cloud"
+              >
+                <a
+                  href="https://github.com/athefe-tanjavoor/Atif-Portfolio-Website"
+                  target="_blank"
+                  >c
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Atif-portfolio.png"
+                      alt="EC2 Lifecycle Automation"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">This Portfolio-Website</h3>
+                  <p class="project-category">portfolio</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-          <ul class="blog-posts-list">
+                      <span class="dot"></span>
 
-            <li class="blog-post-item">
-              <a href="#">
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-  <h2 class="h2 article-title">Contact</h2>
-</header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.487083040865!2d80.27071811533957!3d13.082680690781859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265d4a9e2b1a1%3A0x4f7c9d5cbd82b4f0!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1692456789000!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </figure>
+          </section>
 
-<section class="mapbox" data-mapbox>
-  <figure>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.487083040865!2d80.27071811533957!3d13.082680690781859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265d4a9e2b1a1%3A0x4f7c9d5cbd82b4f0!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1692456789000!5m2!1sen!2sin"
-      width="100%"
-      height="300"
-      style="border:0; border-radius: 10px;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </figure>
-</section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Me</h3>
 
-<section class="contact-form">
-  <h3 class="h3 form-title">Contact Me</h3>
+            <form
+              action="https://formspree.io/f/mwpqdqoo"
+              method="POST"
+              class="form-container"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+          </section>
 
-  <form action="https://formspree.io/f/mwpqdqoo" method="POST" class="form-container">
-  <div class="form-group">
-    <input type="text" name="name" placeholder="Full name" required>
-    <input type="email" name="email" placeholder="Email address" required>
-  </div>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit" class="btn-submit">Send Message</button>
-</form>
-</section>
+          <style>
+            .form-container {
+              max-width: 600px;
+              margin: auto;
+              background: #1a1a1a;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+            }
 
-<style>
-  .form-container {
-    max-width: 600px;
-    margin: auto;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+            .form-group {
+              display: flex;
+              gap: 10px;
+            }
 
-  .form-group {
-    display: flex;
-    gap: 10px;
-  }
+            .form-group input,
+            textarea {
+              flex: 1;
+              padding: 12px;
+              border: none;
+              border-radius: 8px;
+              background: #2a2a2a;
+              color: #fff;
+              font-size: 14px;
+            }
 
-  .form-group input, textarea {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #2a2a2a;
-    color: #fff;
-    font-size: 14px;
-  }
+            input::placeholder,
+            textarea::placeholder {
+              color: #aaa;
+            }
 
-  input::placeholder, textarea::placeholder {
-    color: #aaa;
-  }
+            textarea {
+              min-height: 120px;
+              resize: none;
+            }
 
-  textarea {
-    min-height: 120px;
-    resize: none;
-  }
+            .btn-submit {
+              background: #f5c518;
+              color: #000;
+              font-weight: bold;
+              border: none;
+              border-radius: 8px;
+              padding: 12px;
+              cursor: pointer;
+              transition: 0.3s;
+            }
 
-  .btn-submit {
-    background: #f5c518;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    padding: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+            .btn-submit:hover {
+              background: #d4a414;
+            }
+          </style>
+        </article>
+      </div>
+    </main>
 
-  .btn-submit:hover {
-    background: #d4a414;
-  }
-</style>
-
-
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
