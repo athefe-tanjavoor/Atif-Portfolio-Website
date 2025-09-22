@@ -66,5 +66,3 @@ Here’s a preview of my portfolio website:
 This project is licensed under the MIT License.
 
 ✨ Built with ❤️ by Athefe
-
-⚡ Now your README has **stars, forks, issues, and license badges** — makes it look polished and GitHub-trending style.
