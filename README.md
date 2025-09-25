@@ -65,4 +65,4 @@ Here’s a preview of my portfolio website:
 📄 License
 This project is licensed under the MIT License.
 
-✨ Built with ❤️ by Athefe
+✨ Built with ❤️ by Athefe.
